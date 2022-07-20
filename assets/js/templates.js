@@ -44,4 +44,10 @@ function create_card(card, id, id_click, is_open) {
     `)
 }
 
-export { tmp_slide_description, tmp_slide_image, tmp_faq_card_open, tmp_faq_card_close, create_card };
+function tmp_company_logo({ company_name }) {
+    return (`
+        <div class="company"><img src="./assets/images/company-logos/${company_name}.svg" alt="${company_name}"></div>
+    `)
+}
+
+export { tmp_slide_description, tmp_slide_image, tmp_faq_card_open, tmp_faq_card_close, create_card, tmp_company_logo };

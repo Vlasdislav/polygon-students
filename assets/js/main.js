@@ -1,4 +1,4 @@
-import { tmp_slide_description, tmp_slide_image, create_card } from "./templates.js";
+import { tmp_slide_description, tmp_slide_image, create_card, tmp_company_logo } from "./templates.js";
 
 const getData = async (url) => {
     const response = await fetch(url);
@@ -37,6 +37,23 @@ button_slider_right.addEventListener('click', () => {
     slide_now = mod(slide_now + 1);
     next_slide();
 }, false);
+
+// Marquee
+// const company_logos = document.querySelector('.company-logos');
+
+// getData('./assets/content/marquee-content.json').then((data) => {
+//     data.forEach((company_name) => {
+//         company_logos.innerHTML += tmp_company_logo(company_name);
+//     })
+// });
+
+$(function() {
+    $('.marquee').marquee({
+        duration: 10000,
+        startVisible: true,
+        duplicated: true
+    });
+});
 
 // FAQ
 const cards = document.querySelector('.cards');
