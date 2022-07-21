@@ -74,7 +74,7 @@ update_faq();
 
 cards.addEventListener('click', (event) => {
     const target = event.target;
-    const card = target.closest('.sign');
+    const card = target.closest('.click');
     if (card) {
         const id = String(card.id).replace(/[^0-9]/g,"");
         open_card[id] = !open_card[id];

@@ -14,8 +14,8 @@ function tmp_slide_image({ img_name, alt_img }) {
 function tmp_faq_card_open({ title, content }, id, id_click) {
     return (`
         <div class="card-open">
-            <div class="card-title">
-                <img class="sign minus" id="card-${id}" src="./assets/images/icons/minus.svg" alt="-" draggable="false">
+            <div class="card-title click" id="card-${id}">
+                <img class="minus" src="./assets/images/icons/minus.svg" alt="-" draggable="false">
                 <h3>${title}</h3>
             </div>
             <div class="card-content ${id == id_click && 'animate__animated animate__fadeIn'}">
@@ -28,8 +28,8 @@ function tmp_faq_card_open({ title, content }, id, id_click) {
 function tmp_faq_card_close({ title }, id) {
     return (`
         <div class="card-close">
-            <div class="card-title">
-                <img class="sign plus" id="card-${id}" src="./assets/images/icons/plus.svg" alt="+" draggable="false">
+            <div class="card-title click" id="card-${id}">
+                <img class="plus" src="./assets/images/icons/plus.svg" alt="+" draggable="false">
                 <h3>${title}</h3>
             </div>
         </div>
