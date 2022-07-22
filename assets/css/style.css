@@ -104,7 +104,7 @@ header {
 }
 
 .line-header {
-    background: #000000;
+    background-color: #000000;
     opacity: 0.05;
     height: 1px;
 }
@@ -181,10 +181,6 @@ h6 {
     margin-bottom: 40px;
 }
 
-.section-2 h2 {
-    margin-bottom: 15px;
-}
-
 .section-2 h3 {
     margin-bottom: 25px;
 }
@@ -203,7 +199,6 @@ h6 {
 
 .section-3 h2 {
     margin-top: 16px;
-    margin-bottom: 16px;
 }
 
 .section-3 h3 {
@@ -320,9 +315,53 @@ h6 {
 }
 
 .section-5 .section-description {
-    margin-left: auto;
-    margin-bottom: -60px;
-    margin-right: -190px;
+    margin-right: 90px;
+}
+
+.section-5 h3 {
+    margin-bottom: 25px;
+}
+
+.section-5 h6 {
+    margin-bottom: 10px;
+}
+
+.step-main {
+    display: flex;
+    align-items: center;
+}
+
+.step-circle {
+    padding: 25px;
+    border-radius: 100%;
+    background-color: rgb(249, 249, 249);
+    margin-right: 26px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.step-circle-number {
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+}
+
+.step-content-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.step-content-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.step-line {
+    margin-left: 40px;
 }
 
 .section-6 {
