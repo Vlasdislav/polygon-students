@@ -1,4 +1,4 @@
-import { tmp_slide_description, tmp_slide_image, create_card, tmp_company_logo } from "./templates.js";
+import { tmp_slide_description, tmp_slide_image, create_card } from "./templates.js";
 
 const getData = async (url) => {
     const response = await fetch(url);
@@ -39,14 +39,6 @@ button_slider_right.addEventListener('click', () => {
 }, false);
 
 // Marquee
-// const company_logos = document.querySelector('.company-logos');
-
-// getData('./assets/content/marquee-content.json').then((data) => {
-//     data.forEach((company_name) => {
-//         company_logos.innerHTML += tmp_company_logo(company_name);
-//     })
-// });
-
 $(function() {
     $('.marquee').marquee({
         duration: 10000,
@@ -80,4 +72,14 @@ cards.addEventListener('click', (event) => {
         open_card[id] = !open_card[id];
         update_faq(id);
     }
+});
+
+// Burger
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.menu-phone');
+const burger_line = document.querySelector('.burger-line');
+
+burger.addEventListener('click', () => {
+    menu.classList.toggle('menu-phone-show');
+    burger_line.classList.toggle('burger-line-active');
 });
