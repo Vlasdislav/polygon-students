@@ -78,8 +78,10 @@ cards.addEventListener('click', (event) => {
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu-phone');
 const burger_line = document.querySelector('.burger-line');
+const body = document.querySelector('body');
 
 burger.addEventListener('click', () => {
     menu.classList.toggle('menu-phone-show');
     burger_line.classList.toggle('burger-line-active');
+    body.classList.toggle('scroll-none');
 });
