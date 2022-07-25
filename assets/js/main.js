@@ -85,3 +85,11 @@ burger.addEventListener('click', () => {
     burger_line.classList.toggle('burger-line-active');
     body.classList.toggle('scroll-none');
 });
+
+// Alert
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target.alt === 'telegram' || target.alt === 'youtube') {
+        alert('Найдите лучше нас в вк: https://vk.com/polygonn1');
+    }
+})

@@ -29,6 +29,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .scroll-none {
@@ -50,7 +51,7 @@ button {
     line-height: 19px;
 }
 
-.pair-of-buttons button:last-child {
+.pair-of-buttons .button-default {
     margin-left: 15px;
 }
 
